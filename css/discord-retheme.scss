@@ -59,7 +59,6 @@
 	 * User Popout
 	 */
 	.user-popout {
-		border: 2px solid $background;
 		border-radius: 10px;
 
 		.header {
@@ -119,6 +118,14 @@
 #user-profile-modal {
 	border: 5px solid $background;
 	border-radius: 10px;
+
+	.guilds .section+.section{
+				border-top:1px solid $text;
+	}
+
+	.guilds .section .connected-accounts .connected-account{
+		border:1px solid $text;	
+	}
 
 	.header {
 		background: $background !important;
@@ -203,3 +210,8 @@
 		}
 	}
 }
+/*context menu*/
+	.context-menu {
+		background: $background;
+		color: $text;
+	}
