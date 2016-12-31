@@ -198,31 +198,3 @@
 		}
 	}
 }
-
-
-
-/**
- * Custom stuff
- */
-.guilds-wrapper {
-	width: 0;
-}
-
-@media (max-width: 1275px) {
-	.guilds-wrapper {
-		width: 80px;
-	}
-}
-
-.guild-header span,
-.chat .title-wrap .channel-name {
-	color: #666 !important;  
-}
-
-.osx-buttons {
-	display: none;
-}
-
-.message-group-blocked {
-	/*display: none;*/
-}
