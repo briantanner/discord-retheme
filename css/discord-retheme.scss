@@ -44,10 +44,15 @@
 
 	.message-group {
 		background-color: $message-background;
-		border: solid $border 1px;
+		border: none;
+		border-radius: 5px;
 		padding: 1em;
 		margin-bottom: 0.5em;
 		margin-top: 0.5em;
+
+		&:nth-child(even) {
+			background-color: $message-background-alt;
+		}
 	}
 
 	/**
