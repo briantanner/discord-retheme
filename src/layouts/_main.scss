@@ -1,0 +1,69 @@
+/* Extended by text inputs */
+.textinput {
+	background-color: $chat-background;
+	color: $chat-text;
+	border-color: $border-active;
+}
+
+.context-menu {
+	background: $context-menu-background;
+	color: $context-menu-text;
+
+	.item:hover {
+		background: $context-hover-background;
+	}
+}
+
+.theme-dark {
+	.chat, .chat>.content, .friends-table, .messages-wrapper {
+		background-color: $chat-background;
+	}
+	.guilds-wrapper, .channels-wrap, .guild-channels, .channel-members {
+		background-color: $background;
+	}
+	.guilds-wrapper, .guild-channels {
+		border-right: solid $border 1px;
+	}
+
+	.account {
+		background-color: $background;
+		border-top: solid $border 1px;
+		border-right: solid $border 1px;
+	}
+
+	.guild-header header {
+		background-color: $background;
+		border-bottom: solid $border 1px;
+		border-right: solid $border 1px;
+	}
+
+	.chat .title-wrap {
+		background-color: $chat-background;
+	}
+
+	.message-group .comment .markup {
+		color: $chat-text;
+	}
+
+	.divider.divider-red > span {
+		color: $orange !important;
+	}
+
+	/* channel textarea */
+	.channel-textarea-inner {
+		@extend .textinput;
+	}
+
+	.message-group {
+		background-color: $message-background;
+		border: none;
+		border-radius: 5px;
+		padding: 1em;
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
+
+		&:nth-child(even) {
+			background-color: $message-background-alt;
+		}
+	}
+}

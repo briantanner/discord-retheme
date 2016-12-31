@@ -1,0 +1,98 @@
+/**
+ * User Profile
+ */
+#user-profile-modal {
+	border: $profile-border;
+	border-radius: $profile-border-radius;
+
+	.header {
+		background: $background !important;
+
+		&:after {
+			background-image: none;
+		}
+
+		.header-info .header-info-inner .discord-tag {
+			color: $text;
+		}
+		.header-info .header-info-inner .discord-tag .discriminator {
+			color: $text;
+		}
+	}
+	.avatar-profile {
+		border: solid $background 6px;
+	}
+	.avatar-wrapper {
+		background-color: transparent;
+	}
+	.tab-bar-container {
+		background-color: $chat-background;
+		border-bottom: 0;
+	}
+	.btn {
+		background-color: $btn-profile-color;
+	}
+	.tab-bar {
+		background-color: $chat-background;
+		border: 0 !important;
+
+		.tab-bar-item {
+			background-color: $chat-background;
+			border-radius: 5px;
+			padding: 8px;
+
+			&:hover {
+				background-color: $profile-item-hover !important;
+			}
+		}
+		.tab-bar-item.selected {
+			background-color: $background !important;
+			border-radius: 5px;
+			padding: 8px;
+		}
+	}
+	.empty {
+		background-color: $chat-background;
+	}
+	.scroller {
+		background-color: $chat-background;
+
+		::-webkit-scrollbar-track-piece {
+			background-color: $chat-background;
+			border: 0;
+		}
+		::-webkit-scrollbar-thumb {
+			border: 3px solid $chat-background;
+		}
+	}
+	.guilds .guild:hover {
+		background: $profile-item-hover;
+		color: #fff;
+
+		.guild-name {
+			background: $profile-item-hover;
+		}
+	}
+
+	.guilds .section+.section {
+		border-top: 1px solid $text;
+	}
+
+	.guilds .section .connected-accounts .connected-account {
+		border: 1px solid $text;
+	}
+
+	footer {
+		background-color: $background;
+
+		.btn-add-friend {
+			background-color: $btn-add-friend-color;
+		}
+		.btn-reject-friend {
+			background-color: $chat-background;
+		}
+		.btn.disabled {
+			background-color: $chat-background;
+		}
+	}
+}

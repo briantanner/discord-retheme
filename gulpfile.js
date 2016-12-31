@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 
 const cssPaths = {
-	src: './css/**/*.scss',
+	src: './src/**/*.scss',
 	dest: './css',
 };
 

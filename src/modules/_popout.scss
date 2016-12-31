@@ -1,0 +1,62 @@
+/**
+ * User Popout
+ */
+.user-popout {
+	border: $popout-border;
+	border-radius: $popout-border-radius;
+
+	.header {
+		background: $chat-background !important;
+		border: 1px solid $chat-background;
+	}
+	.header.streaming {
+		.live-on-twitch {
+	  		border: 0;
+	  	}
+	  	.live-on-twitch:hover {
+  		  	background-color: $background;
+  		}
+  		.live-on-twitch .live {
+  			animation: none;
+  			background-color: $popout-streaming-color;
+  		}
+	}
+
+	.avatar-wrapper .avatar-popout {
+		border: $popout-avatar-border;
+	}
+
+	.body {
+		background-color: $background;
+		.notes textarea:focus {
+			background-color: $background;
+		}
+	}
+
+	.footer {
+		background-color: $background;
+		border: 0;
+
+		.quick-message-wrapper .input {
+			background-color: #353945;
+			border: 0;
+			color: #cad1da;
+		}
+	}
+}
+
+.member-roles {
+	.member-role {
+		background-color: $chat-background;
+		border: $popout-role-border;
+	}
+	.manipulate:hover {
+		border-color: $border-hover;
+	}
+}
+
+.quick-message {
+	background-color: $chat-background;
+	color: $chat-text;
+	border-color: $border-active;
+}
